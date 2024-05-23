@@ -15,8 +15,12 @@
 }
 
 .nav-div{
-    /* border: 1px solid black; */
-    background-color: rgb(179, 179, 179);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999; 
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 1px 0 0 0;
 }
 #nav{
@@ -87,7 +91,29 @@
     align-items: center;
 
 }
+.services div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services button{
+    background-color: white;
+    border: 1px solid #017fc4;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.services button:hover{
+    background-color: #017fc4;
+    color: white;
+}
+/* .cards{
+    height: 200px;
+} */
 .ourservices{
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +126,7 @@
     align-items: center; 
 }
 .ourpartners{
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
