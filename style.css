@@ -7,6 +7,58 @@
     margin: 0;
 }
 
+.uppernav{
+    height:120px ;
+
+    gap: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uppernav .logo{
+    margin: 5px 0 0 5px;
+        
+}
+#medi{
+    margin-right: 7px;
+}
+.uppernav .logo img{
+    width: 200px;
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222);
+}
+.uppernavinner{
+    display: flex;
+    justify-content: center;
+}
+#uppernavinner{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.uppernavinner a img{
+    width: 50px;
+    height: 50px;
+}
+#fdoctor{
+    margin: 15px;
+}
+
+#fdoctor a{
+    color: black;
+}
+
+
+.logoname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uppernavinner2{
+    gap: 35px;
+    display: flex;
+    /* margin-left: 600px; */
+}
+
 #nav-a{
     color: black;
 }
@@ -15,7 +67,7 @@
 }
 
 .nav-div{
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 9999; 
@@ -76,7 +128,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -170px;
+    margin-top: -120px;
     margin-bottom: 390px;
 }
 /* .card{
@@ -108,6 +160,34 @@
     background-color: #017fc4;
     color: white;
 }
+
+.partners {
+    gap: 50px;
+    display: flex;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+
+}
+.partners div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners button{
+    background-color: white;
+    border: 1px solid #017fc4;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.partners button:hover{
+    background-color: #017fc4;
+    color: white;
+}
+
 /* .cards{
     height: 200px;
 } */
@@ -133,7 +213,9 @@
 
 #footer{
     display: flex;
-    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
     margin-top: 250px;
 }
 
@@ -154,5 +236,5 @@ a{
 }
 #carouselExampleControls{
     height: 0px;
-    margin: 40px 0 250PX 0;
+    margin: 0 0 250PX 0;
 }
