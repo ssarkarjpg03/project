@@ -9,117 +9,112 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-d">
-      <div class="container-fluid">
-        <a class="navbar-brand" id="nav-a" href="#">Mediwise</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active nav-la" id="nav-a" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-la" id="nav-a" href="hospital.html">Hospitals</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav-la" id="nav-a" href="doctors.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Doctors
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Gynology</a></li>
-                <li><a class="dropdown-item" href="#">Psycology</a></li>
-                <li><a class="dropdown-item" href="#">Nurology</a></li>
-                <li><a class="dropdown-item" href="#">Skin Specialist</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" id="nav-a" class="nav-link nav-la">About Us</a>
-            </li>
-          </ul>
-            <div class="search">
-            <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn"><i class="fa fa-search"></i></button>           
-            </div>
-        </div> 
-      </div>
+    <div class="nav-div">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="nav-a" href="#">Mediwise</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active nav-la" id="nav-a" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-la" id="nav-a" href="hospital.html">HOSPITALS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-la" id="nav-a" href="doctors.html">DOCTORS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-la" id="nav-a" href="doctors.html">BOOK AN APPOINTMENT</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" id="nav-a" class="nav-link nav-la">ABOUT US</a>
+              </li>
+            </ul>
+              <div class="search">
+              <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn"><i class="fa fa-search"></i></button>           
+              </div>
+          </div> 
+        </div>
 
-      <!-- log in -->
-      <!-- Button trigger modal -->
-      <button type="button" class="button form-group" id="loginbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Log in</button>
+        <!-- log in -->
+        <!-- Button trigger modal -->
+        <button type="button" class="button form-group" id="loginbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Log in</button>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
+        </div>
 
 
-      <!-- sign up -->
-      <!-- Button trigger modal -->
-      <button type="button" class="button form-group" id="signupbtn" data-bs-toggle="modal" data-bs-target="#sighUpModal">Sign up</button>
-      <!-- Modal -->
-      <div class="modal fade" id="sighUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputName1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Conform Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Sigh up</button>
+        <!-- sign up -->
+        <!-- Button trigger modal -->
+        <button type="button" class="button form-group" id="signupbtn" data-bs-toggle="modal" data-bs-target="#sighUpModal">Sign up</button>
+        <!-- Modal -->
+        <div class="modal fade" id="sighUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputName1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Conform Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Sigh up</button>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
+    </div>
 
     <!-- about us -->
     <div class="row featurette my-5 d-flex justify-content-center align-items-center" style="width: 900px;">
