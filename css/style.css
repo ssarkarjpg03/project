@@ -7,6 +7,15 @@
     margin: 0;
 }
 
+/* #alert{
+    height: 40px;
+    color: white;
+    background-color:#006298 ;
+}
+.alert{
+    margin-top: -20px;
+} */
+
 .nav-div-upper{
     /* gap: 900px; */
     display: flex;
