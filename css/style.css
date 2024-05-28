@@ -7,10 +7,16 @@
     margin: 0;
 }
 
+.nav-div-upper{
+    /* gap: 900px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .uppernav{
     height:120px ;
-
-    gap: 900px;
+    gap: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +67,7 @@
 
 #nav-a{
     color: rgb(255, 255, 255);
-    
+
 }
 #nav-a:hover{
     /* color: #006298; */
