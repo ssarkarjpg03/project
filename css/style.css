@@ -259,14 +259,14 @@
 }
 
 #footer{
+    height: 300px;
     color: white;
     background-color: #006298;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 250px;
-    height: 300px;
+    /* margin-top: 250px; */
 }
 
 .footer-inner{
@@ -279,9 +279,12 @@
 }
 #footera{
     margin: 0;
+    /* height: 500px; */
 }
 #copyright{
-    margin-top: 30px;
+    background-color:#006298 ;
+    color: white;
+    padding: 20px 0 10px 0;
 }
 a{
     /* color: white; */
