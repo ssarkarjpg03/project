@@ -201,7 +201,7 @@
     color: white;
 }
 
-/* .cards{
+/* .cards img{
     height: 200px;
 } */
 .ourservices{
@@ -209,6 +209,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ourservicesimg{
+    height: 200px;
+    width: 310px;
 }
 .partners{
     gap: 50px;
@@ -225,6 +230,8 @@
 }
 
 #footer{
+    color: white;
+    background-color: #006298;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,7 +241,9 @@
 
 .footer-inner{
     margin-left: 20px;
+    /* color: white; */
 }
+
 #subscribe{
     margin-left: 150px;
 }
@@ -245,6 +254,7 @@
     margin-top: 30px;
 }
 a{
+    /* color: white; */
     text-decoration: none;
 }
 #carouselExampleControls{
