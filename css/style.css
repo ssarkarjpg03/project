@@ -211,9 +211,25 @@
     align-items: center;
 }
 
-.ourservicesimg{
+#ourservicesimg1{
     height: 200px;
-    width: 310px;
+    width: 240px;
+}
+#ourservicesimg2{
+    height: 200px;
+    width: 240px;
+}
+#ourservicesimg3{
+    height: 200px;
+    width: 240px;
+}
+#ourservicesimg4{
+    height: 200px;
+    width: 225px;
+}
+#ourservicesimg5{
+    height: 200px;
+    width: 240px;
 }
 .partners{
     gap: 50px;
@@ -227,6 +243,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#partnersimg1{
+    width:400px;
+    height: 300px;
+}
+#partnersimg2{
+    width:400px;
+    height: 300px;
+}
+#partnersimg3{
+    width:400px;
+    height: 300px;
 }
 
 #footer{
