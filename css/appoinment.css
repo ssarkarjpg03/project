@@ -1,56 +1,61 @@
-#nav-a{
+#nav-a {
     color: rgb(255, 255, 255);
 
 }
-#nav-a:hover{
+
+#nav-a:hover {
     /* color: #006298; */
     border-bottom: 2px solid white;
 }
 
-.nav-div{
+.nav-div {
 
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 9999; 
+    z-index: 9999;
     background-color: #006298;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#nav{
+
+#nav {
     color: rgb(255, 255, 255);
 }
 
 
-#search{
+#search {
     border: none;
     /* background-color: white; */
 }
 
-#submit-button a img{
+#submit-button a img {
     height: 20px;
     width: 20px;
     margin: 4px 4px 0 0;
 }
-#search-btn{
+
+#search-btn {
     width: 50px;
     /* background-color: white; */
 }
-.search{
+
+.search {
     background-color: white;
     display: flex;
     border: 1px solid black;
     border-radius: 7px;
 }
-#loginbtn{
+
+#loginbtn {
     width: 90px;
 }
 
-#signupbtn{
+#signupbtn {
     margin: 0 7px 0 7px;
     width: 90px;
 }
 
-.button{
+.button {
     background: white;
     border: 2px solid #017fc4;
     width: 40px;
@@ -58,7 +63,8 @@
     border-radius: 6px;
     color: #017fc4;
 }
-.button:hover{
+
+.button:hover {
     background-color: #017fc4;
     color: white;
     width: 40px;
@@ -71,7 +77,7 @@
 
 
 /* footer */
-#footer{
+#footer {
     height: 300px;
     color: white;
     background-color: #006298;
@@ -82,46 +88,52 @@
     /* margin-top: 250px; */
 }
 
-.footer-inner{
+.footer-inner {
     margin-left: 20px;
     /* color: white; */
 }
 
-#subscribe{
+#subscribe {
     margin-left: 150px;
 }
-#footera{
+
+#footera {
     margin: 0;
     /* height: 500px; */
 }
-#copyright{
-    background-color:#006298 ;
+
+#copyright {
+    background-color: #006298;
     color: white;
     padding: 20px 0 10px 0;
 }
-a{
+
+a {
     /* color: white; */
     text-decoration: none;
 }
-#carouselExampleControls{
+
+#carouselExampleControls {
     height: 0px;
     margin: 0 0 250PX 0;
 }
 
-.searchD{
-    display:flex;
+.searchD {
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.searchD h2{
+
+.searchD h2 {
     margin-top: 100px;
 }
-#searchDttype{
+
+#searchDttype {
     margin-left: 10px;
     border: 1px solid black;
 }
 
-#searchDttype input{
-    border:none;
+#searchDttype input {
+    border: none;
 }
