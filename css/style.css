@@ -1,123 +1,145 @@
-#sf{
+#sf {
     text-align: center;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.nav-div-upper{
+/* #alert{
+    height: 40px;
+    color: white;
+    background-color:#006298 ;
+}
+.alert{
+    margin-top: -20px;
+} */
+
+.nav-div-upper {
     /* gap: 900px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.uppernav{
-    height:120px ;
+.uppernav {
+    height: 120px;
     gap: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.uppernav .logo{
+
+.uppernav .logo {
     margin: 5px 0 0 5px;
-        
+
 }
-#medi{
+
+#medi {
     margin-right: 7px;
 }
-.uppernav .logo img{
+
+.uppernav .logo img {
     width: 200px;
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     filter: drop-shadow(2px 2px 2px #222);
 }
-.uppernavinner{
+
+.uppernavinner {
     display: flex;
     justify-content: center;
 }
-#uppernavinner{
+
+#uppernavinner {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.uppernavinner a img{
+
+.uppernavinner a img {
     width: 50px;
     height: 50px;
 }
-#fdoctor{
+
+#fdoctor {
     margin: 15px;
 }
 
-#fdoctor a{
+#fdoctor a {
     color: black;
 }
 
 
-.logoname{
+.logoname {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.uppernavinner2{
+
+.uppernavinner2 {
     gap: 35px;
     display: flex;
     /* margin-left: 600px; */
 }
 
-#nav-a{
+#nav-a {
     color: rgb(255, 255, 255);
 
 }
-#nav-a:hover{
+
+#nav-a:hover {
     /* color: #006298; */
     border-bottom: 2px solid white;
 }
 
-.nav-div{
+.nav-div {
 
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 9999; 
+    z-index: 9999;
     background-color: #006298;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#nav{
+
+#nav {
     color: rgb(255, 255, 255);
 }
 
 
-#search{
+#search {
     border: none;
     /* background-color: white; */
 }
 
-#submit-button a img{
+#submit-button a img {
     height: 20px;
     width: 20px;
     margin: 4px 4px 0 0;
 }
-#search-btn{
+
+#search-btn {
     width: 50px;
     /* background-color: white; */
 }
-.search{
+
+.search {
     background-color: white;
     display: flex;
     border: 1px solid black;
     border-radius: 7px;
 }
-#loginbtn{
+
+#loginbtn {
     width: 90px;
 }
 
-#signupbtn{
+#signupbtn {
     margin: 0 7px 0 7px;
     width: 90px;
 }
 
-.button{
+.button {
     background: white;
     border: 2px solid #017fc4;
     width: 40px;
@@ -125,18 +147,19 @@
     border-radius: 6px;
     color: #017fc4;
 }
-.button:hover{
+
+.button:hover {
     background-color: #017fc4;
     color: white;
     width: 40px;
     height: 38px;
 }
 
-.col{
+.col {
     padding: 0;
 }
 
-#details{
+#details {
     gap: 80px;
     display: flex;
     justify-content: center;
@@ -144,6 +167,15 @@
     margin-top: -120px;
     margin-bottom: 390px;
 }
+.services-partners{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #d2d2d2c6, rgb(255, 255, 255));
+}
+/* .services-background{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #2ba3e4, rgb(255, 255, 255));
+}
+.partners-background{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #2ba3e4, rgb(255, 255, 255));
+} */
 /* .card{
     margin-left: 90px;
 } */
@@ -153,15 +185,17 @@
     /* width: 100vw; */
     justify-content: center;
     align-items: center;
+    /* box-shadow: 5px black inset; */
 
 }
-.services div{
+
+.services div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.services button{
+.services button {
     background-color: white;
     border: 1px solid #017fc4;
     width: 100px;
@@ -169,7 +203,8 @@
     border-radius: 6px;
     margin-bottom: 15px;
 }
-.services button:hover{
+
+.services button:hover {
     background-color: #017fc4;
     color: white;
 }
@@ -182,13 +217,14 @@
     align-items: center;
 
 }
-.partners div{
+
+.partners div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.partners button{
+.partners button {
     background-color: white;
     border: 1px solid #017fc4;
     width: 100px;
@@ -196,7 +232,8 @@
     border-radius: 6px;
     margin-bottom: 15px;
 }
-.partners button:hover{
+
+.partners button:hover {
     background-color: #017fc4;
     color: white;
 }
@@ -204,61 +241,80 @@
 /* .cards img{
     height: 200px;
 } */
-.ourservices{
+.ourservices {
     margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#ourservicesimg1{
+.ourservices h2{
+    color: rgb(0, 0, 0);
+    margin-top: -90px;
+}
+
+#ourservicesimg1 {
     height: 200px;
     width: 240px;
 }
-#ourservicesimg2{
+
+#ourservicesimg2 {
     height: 200px;
     width: 240px;
 }
-#ourservicesimg3{
+
+#ourservicesimg3 {
     height: 200px;
     width: 240px;
 }
-#ourservicesimg4{
+
+#ourservicesimg4 {
     height: 200px;
     width: 225px;
 }
-#ourservicesimg5{
+
+#ourservicesimg5 {
     height: 200px;
     width: 240px;
 }
-.partners{
+
+.partners {
     gap: 50px;
     display: flex;
     /* width: 100vw; */
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-.ourpartners{
+
+.ourpartners {
     margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#partnersimg1{
-    width:400px;
-    height: 300px;
+.ourpartners h2 {
+    margin-top: -100px;
 }
-#partnersimg2{
-    width:400px;
-    height: 300px;
-}
-#partnersimg3{
-    width:400px;
+
+#partnersimg1 {
+    width: 400px;
     height: 300px;
 }
 
-#footer{
+#partnersimg2 {
+    width: 400px;
+    height: 300px;
+}
+
+#partnersimg3 {
+    width: 400px;
+    height: 300px;
+}
+
+
+/* footer */
+#footer {
     height: 300px;
     color: white;
     background-color: #006298;
@@ -269,46 +325,53 @@
     /* margin-top: 250px; */
 }
 
-.footer-inner{
+.footer-inner {
     margin-left: 20px;
     /* color: white; */
 }
 
-#subscribe{
+#subscribe {
     margin-left: 150px;
 }
-#footera{
+
+#footera {
     margin: 0;
     /* height: 500px; */
 }
-#copyright{
-    background-color:#006298 ;
+
+#copyright {
+    background-color: #006298;
     color: white;
     padding: 20px 0 10px 0;
 }
-a{
+
+a {
     /* color: white; */
     text-decoration: none;
 }
-#carouselExampleControls{
+
+#carouselExampleControls {
     height: 0px;
     margin: 0 0 250PX 0;
 }
 
-.searchD{
-    display:flex;
+.searchD {
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.searchD h2{
+
+.searchD h2 {
     margin-top: 100px;
 }
-#searchDttype{
+
+#searchDttype {
     margin-left: 10px;
     border: 1px solid black;
 }
 
+<<<<<<< HEAD
 #searchDttype input{
     border:none;
 }
@@ -333,4 +396,8 @@ a{
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
+=======
+#searchDttype input {
+    border: none;
+>>>>>>> 3c342d1234732fb175c190b0cc41ac5e9d333c8b
 }

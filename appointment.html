@@ -127,83 +127,83 @@
     <!-- Book an appointment -->
 
     <div class="row g-3 frm-ht my-5">
-      <div class="col-12">
-          <div id="mess_appointment"></div>
-          <div id="loading_appointment_img" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Please wait..</div>
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="text" class="form-control" placeholder="First Name * " name="fname" id="fname" required="">
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="text" class="form-control" placeholder="Last Name" name="lname" id="lname" required="">
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="email" class="form-control" placeholder="Your Email * " name="email" id="email" required="">
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="text" class="form-control numeric_txtbox" placeholder="Your Mobile * " name="mobile" id="mobile" required="">
-      </div>
-      <div class="col-12 col-sm-6">
-          <select class="form-select" name="ageyear" id="ageyear" required="">
-              <option value="" selected="">Age *</option>
-              <!-- Options for ages 1 to 100 -->
-              <script>
-                  for (let i = 1; i <= 100; i++) {
-                      document.write(`<option value="${i}">${i}</option>`);
-                  }
-              </script>
-          </select>
-      </div>
-      <div class="col-12 col-sm-6">
-          <select class="form-select" name="sex" id="sex" required="">
-              <option value="" selected="">Gender *</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-          </select>
-      </div>
-      <div class="col-12 col-sm-6" id="department_div1">
-          <select class="form-select" name="department" id="department" onchange="getConsultant(this.value)" required="">
-              <option value="" selected="">Select Speciality *</option>
-              <!-- Options for departments -->
-              <option value="1">Advanced Laparoscopic and General Surgery</option>
-              <option value="2">Anaesthesia</option>
-              <!-- Add more options as needed -->
-          </select>
-      </div>
-      <div class="col-12 col-sm-6" id="doctor_div">
-          <select class="form-select" name="consultant" id="consultant" required="">
-              <option value="" selected="">Select Doctor *</option>
-          </select>
-      </div>
-      <div class="col-12 col-sm-12" style="position: relative">
-          <div class="date" id="date" data-target-input="nearest">
-              <input type="date" name="preffered_date" id="preffered_date_pop" class="form-control datetimepicker-input" placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" required="">
-          </div>
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="text" class="form-control" placeholder="City / Town *" name="city" id="city" required="">
-      </div>
-      <div class="col-12 col-sm-6">
-          <input type="text" class="form-control" placeholder="Country *" name="country" id="country" required="">
-      </div>
-      <div class="col-12">
-          <!-- Hidden fields -->
-          <input type="hidden" name="USOURCE" id="USOURCE">
-          <input type="hidden" name="UMEDIUM" id="UMEDIUM">
-          <input type="hidden" name="UCAMPAIGN" id="UCAMPAIGN">
-          <input type="hidden" name="UCONTENT" id="UCONTENT">
-          <input type="hidden" name="UTERM" id="UTERM">
-          <input type="hidden" name="IREFERRER" id="IREFERRER">
-          <input type="hidden" name="LREFERRER" id="LREFERRER">
-          <input type="hidden" name="ILANDPAGE" id="ILANDPAGE">
-          <input type="hidden" name="VISITS" id="VISITS">
-          <input type="hidden" name="#" value="#">
-          <input type="hidden" name="ip" value="#">
-          <input name="getanappointment" type="hidden" value="2">
-          <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-          <button class="btn btn-primary w-100" id="appointsubmitTriger" type="submit">Book Appointment</button>
-      </div>
-  </div>
+    <div class="col-12">
+        <div id="mess_appointment"></div>
+        <div id="loading_appointment_img" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Please wait..</div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="text" class="form-control" placeholder="First Name * " name="fname" id="fname" required="">
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="text" class="form-control" placeholder="Last Name" name="lname" id="lname" required="">
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="email" class="form-control" placeholder="Your Email * " name="email" id="email" required="">
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="text" class="form-control numeric_txtbox" placeholder="Your Mobile * " name="mobile" id="mobile" required="">
+    </div>
+    <div class="col-12 col-sm-6">
+        <select class="form-select" name="ageyear" id="ageyear" required="">
+            <option value="" selected="">Age *</option>
+            <!-- Options for ages 1 to 100 -->
+            <script>
+                for (let i = 1; i <= 100; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+    </div>
+    <div class="col-12 col-sm-6">
+        <select class="form-select" name="sex" id="sex" required="">
+            <option value="" selected="">Gender *</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+    <div class="col-12 col-sm-6" id="department_div1">
+        <select class="form-select" name="department" id="department" onchange="getConsultant(this.value)" required="">
+            <option value="" selected="">Select Speciality *</option>
+            <!-- Options for departments -->
+            <option value="1">Advanced Laparoscopic and General Surgery</option>
+            <option value="2">Anaesthesia</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+    <div class="col-12 col-sm-6" id="doctor_div">
+        <select class="form-select" name="consultant" id="consultant" required="">
+            <option value="" selected="">Select Doctor *</option>
+        </select>
+    </div>
+    <div class="col-12 col-sm-12" style="position: relative">
+        <div class="date" id="date" data-target-input="nearest">
+            <input type="date" name="preffered_date" id="preffered_date_pop" class="form-control datetimepicker-input" placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" required="">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="text" class="form-control" placeholder="City / Town *" name="city" id="city" required="">
+    </div>
+    <div class="col-12 col-sm-6">
+        <input type="text" class="form-control" placeholder="Country *" name="country" id="country" required="">
+    </div>
+    <div class="col-12">
+        <!-- Hidden fields -->
+        <input type="hidden" name="USOURCE" id="USOURCE">
+        <input type="hidden" name="UMEDIUM" id="UMEDIUM">
+        <input type="hidden" name="UCAMPAIGN" id="UCAMPAIGN">
+        <input type="hidden" name="UCONTENT" id="UCONTENT">
+        <input type="hidden" name="UTERM" id="UTERM">
+        <input type="hidden" name="IREFERRER" id="IREFERRER">
+        <input type="hidden" name="LREFERRER" id="LREFERRER">
+        <input type="hidden" name="ILANDPAGE" id="ILANDPAGE">
+        <input type="hidden" name="VISITS" id="VISITS">
+        <input type="hidden" name="#" value="#">
+        <input type="hidden" name="ip" value="#">
+        <input name="getanappointment" type="hidden" value="2">
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+        <button class="btn btn-primary w-100" id="appointsubmitTriger" type="submit">Book Appointment</button>
+    </div>
+</div>
 
    <!-- footer -->
    <div id="footer">
