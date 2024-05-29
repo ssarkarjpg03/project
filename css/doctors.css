@@ -1,0 +1,7 @@
+.doctors-inner {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
