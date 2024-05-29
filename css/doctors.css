@@ -1,7 +1,19 @@
 .doctors-inner {
+
+}
+
+.cards{
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 10px;
+    /* box-shadow: 1px 1px 1px 1px #888888c8; */
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
+
+.dDetails{
+    display: flex;
+    align-items: center;
 }
