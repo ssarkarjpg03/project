@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        .email-verify {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div>
+        <h1>OTP Verification</h1>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button onclick="SendOtp()">Send OTP</button>
+    </div>
+
+    <div class="email-verify">
+        <input type="text" id="otp-input" placeholder="Enter OTP">
+        <button id="btn-verify-otp">Verify OTP</button>
+    </div>
+
+    <!-- <script>
+        function SendOtp() {
+            const email = document.getElementById("email");
+            const otpverify = document.getElementsByClassName("email-verify")[0]; 
+
+            let otp_code = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+            let emailbody = `<h1>Your OTP is ${otp_code}</h1>`;
+            Email.send({
+                SecureToken : "16613b6b-da3d-44ee-ba83-494426071ffc",
+                To : email.value,
+                From : "mintubarman2201@gmail.com",
+                Subject : "Your OTP",
+                Body : emailbody,
+            }).then(
+              message => {
+                if(message === "OK"){
+                    alert("OTP sent to your email " + email.value);
+
+                    otpverify.style.display = "flex";
+                    let otp_inp = document.getElementById("otp-input");
+                    let otp_btn = document.getElementById("btn-verify-otp");
+
+                    otp_btn.addEventListener("click", function() {
+                        if(otp_inp.value === otp_code){
+                            alert("Email address verified");
+                            otpverify.style.display = "none";
+                            email.value = "";
+                            otp_inp.value = "";
+                        } else {
+                            alert("Invalid OTP");
+                        }
+                    });
+                } else {
+                    alert("Error sending OTP. Please try again.");
+                }
+              }
+            );
+        }
+    </script> -->
+</body>
+<SCript src="js/emailotp.js"></SCript>
+</html>
