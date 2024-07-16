@@ -1,0 +1,57 @@
+<?php
+session_start();
+require 'connection.html';
+
+if (isset($_POST['name'])) {
+    $user_name = $_POST['name'];
+}
+if (isset($_POST['email'])) {
+    $user_email = $_POST['email'];
+}
+if (isset($_POST['phone'])) {
+    $user_phone = $_POST['phone'];
+}
+if (isset($_POST['pass'])) {
+    $user_pass = $_POST['pass'];
+}
+
+$sql = "INSERT INTO users values('$user_name','$user_email','$user_phone','" . md5($user_pass) . "')";
+
+if (mysqli_query($conn, $sql)) {
+    echo '<script>';
+    echo 'alert("signg up successfully")';
+    echo 'window.location="#";';
+    echo '</script>';
+} else {
+    echo '<script>';
+    echo 'aleart("sign up unsuccess full")';
+    echo 'window.location="index.html";';
+    echo '</script>';
+}
+
+
+session_start();
+$phone = $_POST['phone'];
+$otp = rand(0000, 9999);
+$_SESSION['OTP'] = $otp;
+
+
+$API = "5caf41d62364d5b41a893adc1a9dd5d4";
+$PHONE = $phone;
+$OTP = $otp;
+$URL = "https://sms.renflair.in/V1.html?API=$API&PHONE=$PHONE&OTP=$OTP";
+$curl = curl_init($URL);
+curl_setopt($curl, CURLOPT_URL, $URL);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$resp = curl_exec($curl);
+curl_close($curl);
+$data = json_decode($resp);
+$status = $data->status;
+$massage = $data->message;
+if ($status == "SUCCESS") {
+    header("location:otp-submit.html");
+} else {
+    echo "Faild to send otp";
+}
+
+?>

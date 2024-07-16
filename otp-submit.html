@@ -1,0 +1,49 @@
+<?php
+session_start();
+
+$OTP=$_SESSION['OTP'];
+if(isset($_POST['otp'])){
+    $submitedotp=$_POST['otp'];
+    if($OTP==$submitedotp){
+        // echo "Otp Verified";
+        echo '<script>';
+        echo 'window.location="index.html";';
+        echo 'alert("Login with same crediencial")';
+        echo '</script>';
+    }
+    else{
+        echo "Enter Correct otp";
+    }
+}
+
+?>
+
+<!-- <form action="otp-submit.html" method="post">
+<input type="number" name="otp" placeholder="enter otp">
+<button type="submit">OK</button>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="verifyotp.css">
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Verification</h2>
+        <p>Please enter the 4-digit OTP sent to your email:</p>
+        <form action="otp-submit.html" method="post" id="otpForm">
+            <div class="otp-input">
+                <input type="number" name="otp" placeholder="enter otp" class="otp-field">
+            </div>
+            <input type="hidden" name="email" id="userEmail">
+            <input type="hidden" name="generatedOtp" id="generatedOtp">
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+</body>
+<script src="#"></script>
+</html>

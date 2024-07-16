@@ -1,0 +1,2818 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediWise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/doctors.css">
+</head>
+
+<body>
+    <div class="nav-div">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="nav-a" href="#">Mediwise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-la" id="nav-a" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-la" id="nav-a" href="hospital.html">HOSPITALS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-la" id="nav-a" href="doctors.html">DOCTORS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-la" id="nav-a" href="appointment.html">BOOK AN APPOINTMENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" id="nav-a" class="nav-link nav-la">ABOUT US</a>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- log in -->
+            <!-- Button trigger modal -->
+            <button type="button" class="button form-group" id="loginbtn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Login</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sign up -->
+            <!-- Button trigger modal -->
+            <button type="button" class="button form-group" id="signupbtn" data-bs-toggle="modal"
+                data-bs-target="#sighUpModal">Sign up</button>
+            <!-- Modal -->
+            <div class="modal fade" id="sighUpModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName1" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Conform Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Sigh up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- doctors -->
+    <div class="doctors-outer">
+            <div class="doctors">
+                <div class="doctors-inner">
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr Abhishek kr. Sing.jpg" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Abhishek kr. Sing</h5>
+                                    <span class="degree">MS, DNB
+                                        <br>
+                                    </span>
+                                    <p>
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 9.30 am to 1.30 pm
+                                        <br>2.30 pm to 5 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. A.B. Bose.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. A.B. Bose</h5>
+                                    <span class="degree">MS, FRCS, DNB
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon, Thur &amp; Sat - 9 am to 1 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet1.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Abhishek Agarwal.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Abhishek Agarwal</h5>
+                                    <span class="degree">MS, DNB, FJR
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon, Tue, Wed, Thur &amp; Sat - 11 am to 1 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Abhishek Bali.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Abhishek Bali</h5>
+                                    <span class="degree">MBBS, MD (Respiratory Medicine)
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Fri - 11 am to 4 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Aditya Vora.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Aditya Vora</h5>
+                                    <span class="degree">MBBS, MD, DrNB
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 10 am to 5 pm
+                                        <br>Break - 1 pm to 2 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Ajit Kumar Sing.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Ajit Kumar Sing</h5>
+                                    <span class="degree">MD, DNB
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 10 am to 2 pm
+                                        <br> &amp; 6 pm to 7 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Amit Agarwal.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Amit Agarwal</h5>
+                                    <span class="degree">MBBS, MD
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 10 am to 11 am
+                                        <br>&amp; 3 pm to 4 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Anirban roy.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Anirban roy</h5>
+                                    <span class="degree">BDS
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 11 am to 4 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Aritra Ray.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Aritra Ra</h5>
+                                    <span class="degree">MBBS, MD, DM
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Mon - Sat - 2 pm to 5 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                        <div class="img">
+                            <img src="img/Doctors/Dr. Arunava Dutta.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="dDetails">
+                            <div class="dDetails-inner">
+                                <div>
+                                    <h5>Dr. Arunava Dutta</h5>
+                                    <span class="degree">MBBS, MD
+                                        <br>
+                                    </span>
+                                    <p class="specia">
+                                        <span>
+                                            <strong>Availability:</strong>
+                                        </span>
+                                        <br>Tue - Sat - 10 am to 12 pm
+                                    </p>
+                                </div>
+                                <div class="dDetails-inner-button">
+                                    <div>
+                                        <a href="appointment.html"><button>Book appointment</button></a>
+                                        <br>
+                                         <a href="doctordet.html"><button>View Details</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- appointment -->
+        <div class="appointment">
+            <div class="row g-3 frm-ht my-5 shadow-lg p-2 mb-5 bg-body-tertiary rounded">
+                <div class="col-12">
+                    <div id="mess_appointment"></div>
+                    <div id="loading_appointment_img" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Please
+                        wait..</div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="First Name * " name="fname" id="fname"
+                        required="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lname" id="lname" required="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control" placeholder="Your Email * " name="email" id="email"
+                        required="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control numeric_txtbox" placeholder="Your Mobile * " name="mobile"
+                        id="mobile" required="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <select class="form-select" name="ageyear" id="ageyear" required="">
+                        <option value="" selected="">Age *</option>
+                        <!-- Options for ages 1 to 100 -->
+                        <script>
+                            for (let i = 1; i <= 100; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <select class="form-select" name="sex" id="sex" required="">
+                        <option value="" selected="">Gender *</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6" id="department_div1">
+                    <select class="form-select" name="department" id="department" onchange="getConsultant(this.value)"
+                        required="">
+                        <option value="" selected="">Select Speciality *</option>
+                        <!-- Options for departments -->
+                        <option value="1">Advanced Laparoscopic and General Surgery</option>
+                        <option value="2">Anaesthesia</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6" id="doctor_div">
+                    <select class="form-select" name="consultant" id="consultant" required="">
+                        <option value="" selected="">Select Doctor *</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-12" style="position: relative">
+                    <div class="date" id="date" data-target-input="nearest">
+                        <input type="date" name="preffered_date" id="preffered_date_pop"
+                            class="form-control datetimepicker-input" placeholder="Choose Date" data-target="#date"
+                            data-toggle="datetimepicker" required="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="City / Town *" name="city" id="city"
+                        required="">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Country *" name="country" id="country"
+                        required="">
+                </div>
+                <div class="col-12">
+                    <!-- Hidden fields -->
+                    <input type="hidden" name="USOURCE" id="USOURCE">
+                    <input type="hidden" name="UMEDIUM" id="UMEDIUM">
+                    <input type="hidden" name="UCAMPAIGN" id="UCAMPAIGN">
+                    <input type="hidden" name="UCONTENT" id="UCONTENT">
+                    <input type="hidden" name="UTERM" id="UTERM">
+                    <input type="hidden" name="IREFERRER" id="IREFERRER">
+                    <input type="hidden" name="LREFERRER" id="LREFERRER">
+                    <input type="hidden" name="ILANDPAGE" id="ILANDPAGE">
+                    <input type="hidden" name="VISITS" id="VISITS">
+                    <input type="hidden" name="#" value="#">
+                    <input type="hidden" name="ip" value="#">
+                    <input name="getanappointment" type="hidden" value="2">
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                    <button class="btn btn-primary w-100" id="appointsubmitTriger" type="submit">Book
+                        Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- find a doctor -->
+    <!-- <div class="scrollList" id="page_list_content">
+        <div class="jscroll-inner">
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a6236e652_dr-a-b-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. A.B. Bose</a>
+                        </span>
+                        <span class="degree">MS, FRCS, DNB
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon, Thur &amp; Sat - 9 am to 1 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-22"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/ent/dr-a-b-bose"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b849ba9d94_dr-avishek-agarwal-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Abhishek Agarwal</a>
+                        </span>
+                        <span class="degree">MS, DNB, FJR
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon, Tue, Wed, Thur &amp; Sat - 11 am to 1 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-52"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;"
+                            data-remote="request-an-appointment/orthopedic-and-joint-replacement/dr-abhishek-agarwal"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b95635d1f5_abhishek-bali-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Abhishek Bali</a>
+                        </span>
+                        <span class="degree">MBBS, MD (Respiratory Medicine)
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Fri - 11 am to 4 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-66"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/pulmonology/dr-abhishek-bali"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b9b0891a5b_dr-avhishek-singh-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Abhishek Kr. Singh</a>
+                        </span>
+                        <span class="degree">MS, DNB
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 9.30 am to 1.30 pm
+                            <br>2.30 pm to 5 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-71"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/urology/dr-abhishek-kr-singh"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659915e6c5bf9_aditya-vora-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Aditya Vora</a>
+                        </span>
+                        <span class="degree">MBBS, MD, DrNB
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 10 am to 5 pm
+                            <br>Break - 1 pm to 2 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-39"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/nephrology/dr-aditya-vora"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659915e705212_dr-ajit-singh-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Ajit Kumar Singh</a>
+                        </span>
+                        <span class="degree">MD, DNB
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 10 am to 2 pm
+                            <br> &amp; 6 pm to 7 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-40"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/nephrology/dr-ajit-kumar-singh"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e06585772_dr-amit-agarwal-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Amit Agarwal</a>
+                        </span>
+                        <span class="degree">MBBS, MD
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 10 am to 11 am
+                            <br>&amp; 3 pm to 4 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-32"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/internal-medicine/dr-amit-agarwal"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65979a55e13a9_dr-anirban-roy-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Anirban Roy</a>
+                        </span>
+                        <span class="degree">BDS
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 11 am to 4 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-15"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/dentistry/dr-anirban-roy"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e69499938_dr-anjon-debnath-1-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Anjon Debnath</a>
+                        </span>
+                        <span class="degree">MD, DNB
+                            <br>
+                        </span>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-34"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/laboratory/dr-anjon-debnath"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-view-design">
+                <div class="row  ">
+                    <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                        <a href="javascript:">
+                            <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e8c3a3705_aritra-ray-jpg.jpg"
+                                class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                        <span class="docname">
+                            <a href="javascript:">Dr. Aritra Ray</a>
+                        </span>
+                        <span class="degree">MBBS, MD, DM
+                            <br>
+                        </span>
+                        <p class="specia">
+                            <span>
+                                <strong>Availability:</strong>
+                            </span>
+                            <br>Mon - Sat - 2 pm to 5 pm
+                        </p>
+                    </div>
+                    <div class="appointment-adress d-flex justify-content-end">
+                        <a href="javascript:;" data-remote="doctor-profile-details-38"
+                            class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                        <a href="javascript:;" data-remote="request-an-appointment/neonatology/dr-aritra-ray"
+                            class="gVvWyZ  btn-default open_modal_bookoking">
+                            <i class="book_appointment"></i>Request an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="clearfix"></div> 
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b93a2eeb09_dr-arunava-dutta-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Arunava Dutta</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Tue - Sat - 10 am to 12 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-65"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/psychiatry/dr-arunava-dutta"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65979caf72cbc_dr-arup-dey-sarkar-scaled-e1626262057738-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Arup Dey Sarkar</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Tue, Thur &amp; Sat - 10.30 am to 11.30 am
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-18"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/dermatology/dr-arup-dey-sarkar"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a30b3f144_dr-asish-nandy-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Ashish Nandy</a>
+                            </span>
+                            <span class="degree">MBBS,FAEM, MEM
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Sr. Consultant - Emergency Medicine
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-19"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/emergency-medicine/dr-ashish-nandy"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e065ab10f_dr-asif-iqbal-hussain-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Asif Iqbal Hussain</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 1 pm
+                                <br> &amp; 4 pm to 6 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-30"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/internal-medicine/dr-asif-iqbal-hussain"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b98a1188b9_dr-avinash-borah-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Avinash Borah</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-69"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/radiology-imaging/dr-avinash-borah"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659792f56d7b1_dr-avishek-bagchi-scaled-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Avishek Bagchi</a>
+                            </span>
+                            <span class="degree">MD, DM
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 9 am to 1 pm
+                                <br> &amp; 2 pm to 6 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-9"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/cardiology/dr-avishek-bagchi"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659797eb60118_dr-ayan-bannerjee-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Ayan Banerjee</a>
+                            </span>
+                            <span class="degree">MD, DNB, IDCCM
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-13"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/critical-care/dr-ayan-banerjee"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6ab5b1a_bijan-patua-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Bijan Patua</a>
+                            </span>
+                            <span class="degree">MBBS, MS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 5 pm to 6 pm
+                                <br> Except Wednesday
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-48"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-bijan-patua"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6adf68f_dr-bindu-kela-ghosh-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Bindu K.Ghosh</a>
+                            </span>
+                            <span class="degree">MBBS, DGO, MRCOG
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 4 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-44"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-bindu-k-ghosh"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6b0cecc_dr-biswajeet-dey-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Biswajit Dey</a>
+                            </span>
+                            <span class="degree">MD, DGO, FICOG, FICMCH
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Tue, Thur &amp; Sat - 6 pm to 10 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-46"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-biswajit-dey"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div> 
+            </div>
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b8886f028e_dr-brahma-dev-singh-1-e1566206050530-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Brahma Dev Singh</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon, Wed, Thur, Fri &amp; Sat -
+                                <br>12 pm to 1 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-58"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/paediatric/dr-brahma-dev-singh"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65978f160d1f4_dr-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Chetan Kumar</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-6"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/anaesthesia/dr-chetan-kumar"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991a672d1b0_dhruv-kumar-agarwal-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Dhruv Kumar Agarwal</a>
+                            </span>
+                            <span class="degree">MBBS, DNB
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                                <br> Break - 1 pm to 2 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-43"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/neurosurgery/dr-dhruv-kumar-agarwal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/video-160324/65f81e7e755fa_dilip-web-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Dip Kumar Chowdhury</a>
+                            </span>
+                            <span class="degree">MBBS, DCH, MRCPCH (UK), MEM, MRCEM (UK)
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Emergency Medicine, Paediatric Medicine, Paediatric Emergency Medicine
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-74"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/emergency-medicine/dr-dip-kumar-chowdhury"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659797ebad8b8_dr-garima-mishra-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Garima Mishra</a>
+                            </span>
+                            <span class="degree">DA, DNB, IDCCM
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-14"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/critical-care/dr-garima-mishra"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65978f162eb20_hiranmoy-roy-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Hiranmoy Roy</a>
+                            </span>
+                            <span class="degree">MBBS, MD (Anaesthesiology)
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-7"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/anaesthesia/dr-hiranmoy-roy"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65978f15db213_dr-iqbal-rahman-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Iqbal Rahman</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-5"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/anaesthesia/dr-iqbal-rahman"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e694bda0b_dr-joydeep-ghosh-laboratory-1-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Joydeep Ghosh</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-36"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/laboratory/dr-joydeep-ghosh"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/27-03-2024/6605b268b8dbc_yadav-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Kali Shankar Yadav</a>
+                            </span>
+                            <span class="degree">MBBS, MEM
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Consultant- Emergency
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-75"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/emergency-medicine/dr-kali-shankar-yadav"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e065cee3c_dr-kalyan-lahiri-for-website-scaled-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Kalyan Lahiri</a>
+                            </span>
+                            <span class="degree">MBBS, PGDCC, MRCP
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 1 pm
+                                <br>&amp; 3 pm to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-31"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/internal-medicine/dr-kalyan-lahiri"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div> 
+            </div>
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b93a2b6010_41b7d449-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Kamalika Mandal</a>
+                            </span>
+                            <span class="degree">DPM, MD, Mrcpsych (London)
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 12.30 pm to 2.30 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-64"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/psychiatry/dr-kamalika-mandal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b9b08ba7c7_kishor-roy-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Kishor Roy</a>
+                            </span>
+                            <span class="degree">MBBS, MS, MCH
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 9 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-72"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/urology/dr-kishor-roy"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a62399ce3_dr-kungjang-bhutia-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Kunzang Doma Bhutia</a>
+                            </span>
+                            <span class="degree">MS, DNB
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-24"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/ent/dr-kunzang-doma-bhutia"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b8e4240eb0_manas-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Manas Pratim Deka</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-61"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/pathology/dr-manas-pratim-deka"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b8c4ac85cf_dr-manish-madhav-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Manish Madhav</a>
+                            </span>
+                            <span class="degree">MS, MCH
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 pm to 11 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-60"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/paediatric-surgery/dr-manish-madhav"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b98a0e957c_dr-manjari-thapa-manger-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Manjari Thapa Manger</a>
+                            </span>
+                            <span class="degree">MBBS, MD , Fellowship in Interventional Radiology from PGIMER ,
+                                Chandigarh
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-70"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/radiology-imaging/dr-manjari-thapa-manger"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598dbce84578_dr-nadeem-parvez-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Md. Nadeem Parvez</a>
+                            </span>
+                            <span class="degree">MD, DM
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Fri - 10 am to 4 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-25"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/gastroenterology/dr-md-nadeem-parvez"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b8f63d9ecb_dr-sohaib-akhtar-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Md. Sohaib Akhter</a>
+                            </span>
+                            <span class="degree">MS, MCH
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 11 am
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-63"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/plastic-and-reconstructive-surgery/dr-md-sohaib-akhter"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65979cafa0abd_najuma-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Najuma Subba</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am 5 pm
+                                <br>Break 1 pm to 2 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-17"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/dermatology/dr-najuma-subba"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991a6751390_dr-navneet-singh-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Navneet Kr. Singh</a>
+                            </span>
+                            <span class="degree">MS, MCh
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 2 pm
+                                <br> &amp; 3 pm to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-42"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/neurosurgery/dr-navneet-kr-singh"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div>
+            </div>
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b888725c79_dr-noopur-baijal-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Noopur Baijal</a>
+                            </span>
+                            <span class="degree">MBBS, DNB
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 9.30 am to 2 pm
+                                <br> &amp; 3 pm to 5.30 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-57"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/paediatric/dr-noopur-baijal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e0660068a_dr-p-d-bhutia-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. P. D Bhutia</a>
+                            </span>
+                            <span class="degree">MD (Medicine), FRCP (Edinburgh), MACP (USA), FEAC (UK), Recipient of
+                                Prestigious 'Bangaratna' and 'Bishishta Chikitasha Samman', Government of West Bengal
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Tue &amp; Thur - 9 am to 10 am
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-29"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/internal-medicine/dr-p-d-bhutia"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598de322eed4_partha-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Partha Sarathi Jena</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-27"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/hematology/dr-partha-sarathi-jena"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659797eb85249_dr-pradipto-bhattacharjee-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Pradipta Bhattacharya</a>
+                            </span>
+                            <span class="degree">MD, IDCCM, EDIC
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-12"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/critical-care/dr-pradipta-bhattacharya"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597874921fb9_e2a6ed70-6fa6-4c7c-af78-3fa8a0eb4c56-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Pranay Gourav</a>
+                            </span>
+                            <span class="degree">MBBS, DNB
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-4"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/advanced-laparoscopic-and-general-surgery/dr-pranay-gourav"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a623bcb72_dr-prassana-datta-c-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Prasanna Datta</a>
+                            </span>
+                            <span class="degree">MS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 9 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-23"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/ent/dr-prasanna-datta"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a30b6f6b1_prasoon-mondal-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Prasun Mondal</a>
+                            </span>
+                            <span class="degree">MD, MEM
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-20"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/emergency-medicine/dr-prasun-mondal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b8f64188df_pravin-1-webp.webp"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Pravin Kumar</a>
+                            </span>
+                            <span class="degree">MBBS, D.T.M &amp; H., M.Ch.(Plastic surgery)
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Fri - 12 pm to 2 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-62"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/plastic-and-reconstructive-surgery/dr-pravin-kumar"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b888743c52_dr-prince-parak-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Prince Parakh</a>
+                            </span>
+                            <span class="degree">MD (Paediatrics), FISPN
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 1 pm
+                                <br> &amp; 3 pm to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-56"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/paediatric/dr-prince-parakh"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6b6d827_priyankur-roy-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Priyankur Roy</a>
+                            </span>
+                            <span class="degree">MBBS, MS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon, Wed &amp; Fri - 10 am to 11 am
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-49"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-priyankur-roy"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div> 
+            </div>
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e0661fff2_rahultaparia-1-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Rahul Taparia</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 2 om
+                                <br>&amp; 3 pm to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-33"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/internal-medicine/dr-rahul-taparia"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597874846274_dr-rajat-agarwal-2-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Rajat Kr. Agarwal</a>
+                            </span>
+                            <span class="degree">MS, FAIS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 1 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-3"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/advanced-laparoscopic-and-general-surgery/dr-rajat-kr-agarwal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659795f8aa2d5_dr-rajeev-trehan-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Rajeev Trehan</a>
+                            </span>
+                            <span class="degree">MS, MCH (CTVS)
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-11"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/cardiothoracic-and-vascular-surgery/dr-rajeev-trehan"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659792f5e4d33_dr-rajesh-nanda-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Rajesh Nanda</a>
+                            </span>
+                            <span class="degree">MD, DNB (Cardiology)
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Fri - 9 am to 2 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-10"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/cardiology/dr-rajesh-nanda"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659791fe0802d_rohit-hanuka-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Rohit Dhanuka</a>
+                            </span>
+                            <span class="degree">PGDCC, DA
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-8"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/cardiac-anaesthesia/dr-rohit-dhanuka"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65979a5611836_dr-s-sushant-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. S.S. Sushant</a>
+                            </span>
+                            <span class="degree">BDS, MDS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sun - 10 am to 11 am
+                                <br> &amp; 5 pm to 7 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-16"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/dentistry/dr-s-s-sushant"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e695033a0_dr-sangita-akoijam-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Sangeeta Dey Akoijam</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-35"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/laboratory/dr-sangeeta-dey-akoijam"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6b37168_dr-sanjukta-chowdhury-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Sanjukta Chaudhuri</a>
+                            </span>
+                            <span class="degree">MBBS, DNB
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 12.30 pm to 4 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-45"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-sanjukta-chaudhuri"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659787488c27f_dr-saravanan-ramanathan-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Saravanan Ramanathan</a>
+                            </span>
+                            <span class="degree">MBBS, MS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 12 pm
+                                <br> &amp; 1 pm to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-1"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/advanced-laparoscopic-and-general-surgery/dr-saravanan-ramanathan"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65978748c3665_dr-saumitra-saha-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Saumitra Saha</a>
+                            </span>
+                            <span class="degree">MS(CAL), FRCS(ENG), FRCS(GLASG)
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Fri - 1 pm to 2 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-2"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/advanced-laparoscopic-and-general-surgery/dr-saumitra-saha"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div> 
+            </div>
+            <div class="jscroll-added  ">
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/07-05-2024/663bc53e04422_shamik-biswas-web-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Shamick Biswas</a>
+                            </span>
+                            <span class="degree">MBBS, MD, PDCC (Neuroradiology, SGPGI), DM, Neuroimaging and
+                                Interventional Radiology (NIMHANS), Former Senior Resident (Dept of Neuroradiology,
+                                AIIMS, New Delhi)
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Interventional Radiology
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-79"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/radiology-imaging/dr-shamick-biswas"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991f6b51b76_dr-smita-das-ghosh-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Smita Das Ghose</a>
+                            </span>
+                            <span class="degree">MS, FMAS, DMAS
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 12 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-47"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/obstetrics-and-gynaecology/dr-smita-das-ghose"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b849bc7385_somsubhra-pal-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Somsubhra Pal</a>
+                            </span>
+                            <span class="degree">MBBS, DNB
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Fri - 10 am to 12 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-54"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/orthopedic-and-joint-replacement/dr-somsubhra-pal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6597a4ca18edd_dr-subhodip-pramanik-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Subhodip Pramanik</a>
+                            </span>
+                            <span class="degree">MD, MRCP, DNB, DM, SCE (Diabetes &amp; Endocrinology)
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 12 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-21"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/endocrinology/dr-subhodip-pramanik"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/09-04-2024/6616623c82bc6_koley-web-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Suchismita Koley</a>
+                            </span>
+                            <span class="degree">MBBS, MEM
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Consultant- Emergency
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-78"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/emergency-medicine/dr-suchismita-koley"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/02-04-2024/660c2a45af607_sutanay-web-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Sutanay Bhattacharyya</a>
+                            </span>
+                            <span class="degree">MBBS, MD, DM
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Associate Consultant- Nephrology
+                            </p>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-76"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;"
+                                data-remote="request-an-appointment/nephrology/dr-sutanay-bhattacharyya"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/6598e6953cdf4_dr-swati-behera-1-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Swati Behera</a>
+                            </span>
+                            <span class="degree">MBBS, MD
+                                <br>
+                            </span>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-37"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/laboratory/dr-swati-behera"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/09-04-2024/661546920d479_majhi-web-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Tanmoy Maji</a>
+                            </span>
+                            <span class="degree">MBBS, MD, DM
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Associate Consultant - Gastroenterology
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-77"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/gastroenterology/dr-tanmoy-maji"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/65991920b0c8f_dr-tanmay-pal-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Tanmoy Pal</a>
+                            </span>
+                            <span class="degree">DA, MD, DrNB-Neurology, SCE (UK-Neurology), MRCP (UK), PDF
+                                Neuroendovascular Therapy (Japan)
+                                <br>
+                            </span>
+                            <p class="specia" style="text-align:left;">
+                                <span>
+                                    <strong>Specialization:</strong>
+                                </span>
+                                <br>Sr. Consultant- Neurology
+                            </p>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-41"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/neurology/dr-tanmoy-pal"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-view-design">
+                    <div class="row  ">
+                        <div class="col-md-3 col-sm-4 col-xs-12 find-doctor-img">
+                            <a href="javascript:">
+                                <img src="https://d27yye28rbnqaa.cloudfront.net/NeotiaGetwelSiliguri/upload/test/659b956382679_dr-tarun-kr-baid-jpg.jpg"
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-9 col-sm-4 col-xs-12 find-doctor-details">
+                            <span class="docname">
+                                <a href="javascript:">Dr. Tarun Kumar Baid</a>
+                            </span>
+                            <span class="degree">MD (Respiratory Medicine), IDCCM
+                                <br>
+                            </span>
+                            <p class="specia">
+                                <span>
+                                    <strong>Availability:</strong>
+                                </span>
+                                <br>Mon - Sat - 10 am to 5 pm
+                            </p>
+                        </div>
+                        <div class="appointment-adress d-flex justify-content-end">
+                            <a href="javascript:;" data-remote="doctor-profile-details-67"
+                                class="gVvWyZ  btn-default  mjl5 open_modal_profile ">View Profile</a>
+                            <a href="javascript:;" data-remote="request-an-appointment/pulmonology/dr-tarun-kumar-baid"
+                                class="gVvWyZ  btn-default open_modal_bookoking">
+                                <i class="book_appointment"></i>Request an Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="clearfix"></div>
+                <div class="col-md-12 next text-center mb-5 pb-3">
+                    <a href="search_doctor_list.html?pagenum=8&amp;numresult=10" class="  jscroll-next">
+                        <i class="icofont-news"></i> View More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer-inner">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="hospital.html" class="nav-link p-0 text-light">Hospitals</a></li>
+                <li class="nav-item mb-2"><a href="doctors.html" class="nav-link p-0 text-light">Doctots</a></li>
+                <li class="nav-item mb-2"><a href="appointment.html" class="nav-link p-0 text-light">Book An
+                        Appointment</a></li>
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-light">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-inner">
+            <h5>Our Services</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">E-Prescription</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Online Appointment</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">SOS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Authorised Doctors</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Online Pharmacy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-inner">
+            <h5>Contact Info</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">1800 2525 689</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">1800 2626 689</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">subhashis@gmail.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">mintu@gmail.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Delhi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Kolkata</a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-inner">
+            <h5 style="width: 90px; margin-top:-30px;">Follow Us</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Linkedin</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Twitter-x</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pinterest</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-inner" id="subscribe">
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

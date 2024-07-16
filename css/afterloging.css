@@ -1,0 +1,412 @@
+#sf {
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* #alert{
+    height: 40px;
+    color: white;
+    background-color:#006298 ;
+}
+.alert{
+    margin-top: -20px;
+} */
+
+.nav-div-upper {
+    /* gap: 900px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppernav {
+    height: 120px;
+    gap: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppernav .logo {
+    margin: 5px 0 0 5px;
+
+}
+
+#medi {
+    margin-right: 7px;
+}
+
+.uppernav .logo img {
+    width: 200px;
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222);
+}
+
+.uppernavinner {
+    display: flex;
+    justify-content: center;
+}
+
+#uppernavinner {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.uppernavinner a img {
+    width: 50px;
+    height: 50px;
+}
+
+#fdoctor {
+    margin: 15px;
+}
+
+#fdoctor a {
+    color: black;
+}
+
+
+.logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppernavinner2 {
+    gap: 35px;
+    display: flex;
+    /* margin-left: 600px; */
+}
+
+#nav-a {
+    color: rgb(255, 255, 255);
+
+}
+
+#nav-a:hover {
+    /* color: #006298; */
+    border-bottom: 2px solid white;
+}
+
+.nav-div {
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #006298;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav {
+    color: rgb(255, 255, 255);
+}
+
+
+#search {
+    border: none;
+    /* background-color: white; */
+}
+
+#submit-button a img {
+    height: 20px;
+    width: 20px;
+    margin: 4px 4px 0 0;
+}
+
+#search-btn {
+    width: 50px;
+    /* background-color: white; */
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.Profile {
+    margin-right: 10px;
+}
+
+.Profile svg{
+    width: 40px;
+    height: 40px;
+}
+
+.Profile2 {
+    margin-right: 10px;
+    display: none;
+}
+
+.Profile2 svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+.sidebar {
+    color: white;
+    padding-top: 2%;
+    position:absolute;
+    top: 60px;
+    right: 10px;
+    /* bottom: 100px; */
+    height: 35vh;
+    width: 170px;
+    z-index: 999;
+    background-color: #00639800;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0 5px rgb(0, 0, 0);
+    border-radius: 20px;
+    display: none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+#loginbtn {
+    width: 90px;
+}
+
+#signupbtn {
+    margin: 0 7px 0 7px;
+    width: 90px;
+}
+
+.button {
+    background: white;
+    border: 2px solid #017fc4;
+    width: 40px;
+    height: 38px;
+    border-radius: 6px;
+    color: #017fc4;
+}
+
+.button:hover {
+    background-color: #017fc4;
+    color: white;
+    width: 40px;
+    height: 38px;
+}
+
+.col {
+    padding: 0;
+}
+
+#details {
+    gap: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+    margin-bottom: 390px;
+}
+.services-partners{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #d2d2d2c6, rgb(255, 255, 255));
+}
+/* .services-background{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #2ba3e4, rgb(255, 255, 255));
+}
+.partners-background{
+    background-image: linear-gradient(180deg , rgba(255, 255, 255, 0), #2ba3e4, rgb(255, 255, 255));
+} */
+/* .card{
+    margin-left: 90px;
+} */
+.services {
+    gap: 50px;
+    display: flex;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 5px black inset; */
+
+}
+
+.services div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services button {
+    background-color: white;
+    border: 1px solid #017fc4;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.services button:hover {
+    background-color: #017fc4;
+    color: white;
+}
+
+.partners {
+    gap: 50px;
+    display: flex;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.partners div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners button {
+    background-color: white;
+    border: 1px solid #017fc4;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.partners button:hover {
+    background-color: #017fc4;
+    color: white;
+}
+
+/* .cards img{
+    height: 200px;
+} */
+.ourservices {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourservices h2{
+    color: rgb(0, 0, 0);
+    margin-top: -90px;
+}
+
+#ourservicesimg1 {
+    height: 200px;
+    width: 240px;
+}
+
+#ourservicesimg2 {
+    height: 200px;
+    width: 240px;
+}
+
+#ourservicesimg3 {
+    height: 200px;
+    width: 240px;
+}
+
+#ourservicesimg4 {
+    height: 200px;
+    width: 225px;
+}
+
+#ourservicesimg5 {
+    height: 200px;
+    width: 240px;
+}
+
+.partners {
+    gap: 50px;
+    display: flex;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+}
+
+.ourpartners {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourpartners h2 {
+    margin-top: -100px;
+}
+
+#partnersimg1 {
+    width: 400px;
+    height: 300px;
+}
+
+#partnersimg2 {
+    width: 400px;
+    height: 300px;
+}
+
+#partnersimg3 {
+    width: 400px;
+    height: 300px;
+}
+
+
+/* footer */
+#footer {
+    height: 300px;
+    color: white;
+    background-color: #006298;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* margin-top: 250px; */
+}
+
+.footer-inner {
+    margin-left: 20px;
+    /* color: white; */
+}
+
+#subscribe {
+    margin-left: 150px;
+}
+
+#footera {
+    margin: 0;
+    /* height: 500px; */
+}
+
+#copyright {
+    background-color: #006298;
+    color: white;
+    padding: 20px 0 10px 0;
+}
+
+a {
+    /* color: white; */
+    text-decoration: none;
+}
+
+#carouselExampleControls {
+    height: 0px;
+    margin: 0 0 250PX 0;
+}
+
+.searchD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchD h2 {
+    margin-top: 100px;
+}
+
+#searchDttype {
+    margin-left: 10px;
+    border: 1px solid black;
+}

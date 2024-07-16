@@ -1,0 +1,228 @@
+#nav-a {
+    color: rgb(255, 255, 255);
+
+}
+
+#nav-a:hover {
+    /* color: #006298; */
+    border-bottom: 2px solid white;
+}
+
+.nav-div {
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #006298;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav {
+    color: rgb(255, 255, 255);
+}
+
+
+#search {
+    border: none;
+    /* background-color: white; */
+}
+
+#submit-button a img {
+    height: 20px;
+    width: 20px;
+    margin: 4px 4px 0 0;
+}
+
+#search-btn {
+    width: 50px;
+    /* background-color: white; */
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#loginbtn {
+    width: 90px;
+}
+
+#signupbtn {
+    margin: 0 7px 0 7px;
+    width: 90px;
+}
+
+.button {
+    background: white;
+    border: 2px solid #017fc4;
+    width: 40px;
+    height: 38px;
+    border-radius: 6px;
+    color: #017fc4;
+}
+
+.button:hover {
+    background-color: #017fc4;
+    color: white;
+    width: 40px;
+    height: 38px;
+}
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+}
+
+/* //Basics */
+/* * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+} */
+
+/* body {
+    background-color: #F5F6F8;
+    overflow: hidden;
+} */
+
+/* //Color Variables */
+/* $sidebar-background-color: #313443;
+$active-sidebar-link-color: #22252E;
+$hover-sidebar-link-color: $active-sidebar-link-color;
+$active-link-color: #98D7EC;
+$tooltip-background-color: $sidebar-background-color; */
+
+.sidebar-navigation {
+    display: inline-block;
+    min-height: 100vh;
+    width: 80px;
+    background-color: #006298;
+    /* float: left; */
+
+    ul {
+        text-align: center;
+        color: white;
+
+        li {
+            padding: 28px 0;
+            cursor: pointer;
+            transition: all ease-out 120ms;
+
+            i {
+                display: block;
+                font-size: 24px;
+
+                transition: all ease 450ms;
+            }
+
+            .tooltip {
+                display: inline-block;
+                position: absolute;
+                background-color: #006094;
+                padding: 8px 15px;
+                border-radius: 3px;
+                margin-top: -26px;
+                left: 90px;
+                opacity: 0;
+                visibility: hidden;
+                font-size: 13px;
+                letter-spacing: .5px;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: -4px;
+                    top: 10px;
+                    transform: rotate(45deg);
+                    width: 10px;
+                    height: 10px;
+                    background-color: inherit;
+                }
+            }
+
+            &:hover {
+                background-color: #718b9a;
+
+                .tooltip {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            &.active {
+                background-color: #ffffff;
+
+                i {
+                    color: #006298;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* footer */
+#footer {
+    height: 300px;
+    color: white;
+    background-color: #006298;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* margin-top: 250px; */
+}
+
+.footer-inner {
+    margin-left: 20px;
+    /* color: white; */
+}
+
+#subscribe {
+    margin-left: 150px;
+}
+
+#footera {
+    margin: 0;
+    /* height: 500px; */
+}
+
+#copyright {
+    background-color: #006298;
+    color: white;
+    padding: 20px 0 10px 0;
+}
+
+a {
+    /* color: white; */
+    text-decoration: none;
+}
+
+#carouselExampleControls {
+    height: 0px;
+    margin: 0 0 250PX 0;
+}
+
+.searchD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchD h2 {
+    margin-top: 100px;
+}
+
+#searchDttype {
+    margin-left: 10px;
+    border: 1px solid black;
+}
